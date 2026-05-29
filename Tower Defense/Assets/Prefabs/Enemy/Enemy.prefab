@@ -108,6 +108,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 506b1af145b4d42cf9d4124c87bde216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <BaseHealth>k__BackingField: 2
+  <CurrentHealth>k__BackingField: 0
+  <OnDeath>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4299649054134136531
 GameObject:
   m_ObjectHideFlags: 0

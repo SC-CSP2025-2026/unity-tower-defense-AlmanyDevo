@@ -3,13 +3,13 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [field: SerializeField]
-    public float Speed { get; private set; } = 2;
+    public float Speed { get; private set; } = 15f;
 
     [field: SerializeField]
     public float Damage { get; private set; } = 1;
 
     [field: SerializeField]
-    public Transform Target { get; private set; }
+    public Transform Target { get; set; }
 
     void Update()
     {
@@ -19,7 +19,7 @@ public class Projectile : MonoBehaviour
             return;
         }
 
-        transform.right = Target.position - transform.position;
+        transform.LookAt(Target);
 
         transform.position = Vector3.MoveTowards(
             transform.position,
@@ -29,7 +29,7 @@ public class Projectile : MonoBehaviour
 
         float distance = Vector3.Distance(transform.position, Target.position);
 
-        if (distance <= Mathf.Epsilon)
+        if (distance <= 0.5f)
         {
             Health healthComponent = Target.GetComponentInParent<Health>();
 

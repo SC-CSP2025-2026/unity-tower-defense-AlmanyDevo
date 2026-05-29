@@ -1,19 +1,32 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
     [field: SerializeField]
-    public float BaseHealth { get; private set; } = 2;
+    public float BaseHealth { get; private set; } = 5f;
 
     [field: SerializeField]
-    public float Damage { get; private set; }
+    public float CurrentHealth { get; private set; }
+
+    [field: SerializeField]
+    public UnityEvent<Health> OnDeath { get; private set; }
+
+    void Start()
+    {
+        CurrentHealth = BaseHealth;
+    }
 
     public void ApplyHit(Projectile projectile)
     {
-        Damage += projectile.Damage;
+        CurrentHealth -= projectile.Damage;
 
-        if (Damage >= BaseHealth)
+        Debug.Log(CurrentHealth);
+
+        if (CurrentHealth <= 0)
         {
+            OnDeath.Invoke(this);
+
             Destroy(gameObject);
         }
     }
