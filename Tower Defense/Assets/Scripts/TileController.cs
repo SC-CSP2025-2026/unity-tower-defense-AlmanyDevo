@@ -7,10 +7,11 @@ public class TileController : MonoBehaviour
     public bool IsOccupied { get; private set; } = false;
 
     [field: SerializeField]
-    public UnityEvent<TileController> OnCursorEnter = new();
+    public UnityEvent<TileController> OnCursorEnter;
 
     public void NotifyCursorEnter()
     {
         OnCursorEnter.Invoke(this);
     }
+
 }

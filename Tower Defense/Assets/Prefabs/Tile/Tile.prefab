@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8812360489288602022}
-  - component: {fileID: 6765306393476875150}
+  - component: {fileID: 8921105736221152135}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 7808221667959629761}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6765306393476875150
+--- !u!114 &8921105736221152135
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48,19 +48,7 @@ MonoBehaviour:
   <IsOccupied>k__BackingField: 0
   OnCursorEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4029263300414756792, guid: 133f484a1cfcd4a0197f2f3c0860725a, type: 3}
-        m_TargetAssemblyTypeName: TileCursor, Assembly-CSharp
-        m_MethodName: HandleTileEntered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &7428600243505970555
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +152,7 @@ MonoBehaviour:
   <OnEnter>k__BackingField:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6765306393476875150}
+      - m_Target: {fileID: 8921105736221152135}
         m_TargetAssemblyTypeName: TileController, Assembly-CSharp
         m_MethodName: NotifyCursorEnter
         m_Mode: 1
