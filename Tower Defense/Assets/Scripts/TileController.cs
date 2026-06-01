@@ -16,6 +16,7 @@ public bool IsOccupied { get; private set; } = false;
 
     public void NotifyCursorEnter()
     {
+        Debug.Log("Notify cursor entered");
         OnCursorEnter.Invoke(this);
     }
 

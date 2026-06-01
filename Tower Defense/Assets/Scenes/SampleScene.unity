@@ -2107,6 +2107,11 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &343141217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 918245031956377870, guid: 133f484a1cfcd4a0197f2f3c0860725a, type: 3}
+  m_PrefabInstance: {fileID: 1030890297}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &350675935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6693,6 +6698,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4029263300414756792, guid: 133f484a1cfcd4a0197f2f3c0860725a, type: 3}
+      propertyPath: <Model>k__BackingField
+      value: 
+      objectReference: {fileID: 343141217}
+    - target: {fileID: 4029263300414756792, guid: 133f484a1cfcd4a0197f2f3c0860725a, type: 3}
+      propertyPath: <TargetGrid>k__BackingField
+      value: 
+      objectReference: {fileID: 1168560697}
     - target: {fileID: 8277263351485889993, guid: 133f484a1cfcd4a0197f2f3c0860725a, type: 3}
       propertyPath: m_Name
       value: Tile Cursor

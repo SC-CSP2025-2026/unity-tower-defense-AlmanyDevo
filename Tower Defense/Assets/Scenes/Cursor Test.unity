@@ -879,6 +879,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4029263300414756792, guid: 133f484a1cfcd4a0197f2f3c0860725a, type: 3}
+      propertyPath: <Model>k__BackingField
+      value: 
+      objectReference: {fileID: 1666203572}
+    - target: {fileID: 4029263300414756792, guid: 133f484a1cfcd4a0197f2f3c0860725a, type: 3}
       propertyPath: <TargetGrid>k__BackingField
       value: 
       objectReference: {fileID: 125803079}
@@ -1633,6 +1637,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8812360489288602022, guid: ca1cc9ef229ad48819f5c2b74bea8ae1, type: 3}
   m_PrefabInstance: {fileID: 979202032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1666203572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 918245031956377870, guid: 133f484a1cfcd4a0197f2f3c0860725a, type: 3}
+  m_PrefabInstance: {fileID: 575487972}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1666940698
 GameObject:

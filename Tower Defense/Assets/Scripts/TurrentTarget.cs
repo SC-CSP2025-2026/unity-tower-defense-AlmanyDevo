@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TurretTarget : MonoBehaviour
+public class TurrentTarget : MonoBehaviour
 {
     [field: SerializeField]
     public AreaOfEngagement AoE { get; private set; }

@@ -14,6 +14,7 @@ public class MouseEvents : MonoBehaviour
 
     void OnMouseEnter()
     {
+        Debug.Log("Mouse Entered");
         OnEnter.Invoke();
     }
 

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8999874278471420105}
   - component: {fileID: 3739044099221372614}
   - component: {fileID: 1613746332058292024}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6781109842373730018}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Snow Path Bridge River
   m_TagString: Untagged
   m_Icon: {fileID: 0}

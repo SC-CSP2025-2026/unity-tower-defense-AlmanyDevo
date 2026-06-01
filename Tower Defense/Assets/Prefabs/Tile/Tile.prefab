@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8812360489288602022}
-  - component: {fileID: 8921105736221152135}
-  m_Layer: 0
+  - component: {fileID: 872988166814442788}
+  m_Layer: 7
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 7808221667959629761}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8921105736221152135
+--- !u!114 &872988166814442788
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48,49 +48,13 @@ MonoBehaviour:
   <IsOccupied>k__BackingField: 0
   OnCursorEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8921105736221152135}
-        m_TargetAssemblyTypeName: TileController, Assembly-CSharp
-        m_MethodName: NotifyCursorEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnCursorExit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8921105736221152135}
-        m_TargetAssemblyTypeName: TileController, Assembly-CSharp
-        m_MethodName: NotifyCursorExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnCursorClicked:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8921105736221152135}
-        m_TargetAssemblyTypeName: TileController, Assembly-CSharp
-        m_MethodName: NotifyCursorClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &7428600243505970555
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,8 +67,8 @@ GameObject:
   - component: {fileID: 6625845815480084580}
   - component: {fileID: 8941700110428019886}
   - component: {fileID: 4697846784915269012}
-  - component: {fileID: 1329216674561819491}
-  m_Layer: 0
+  - component: {fileID: 1410321516039417782}
+  m_Layer: 7
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +158,7 @@ MonoBehaviour:
   <OnEnter>k__BackingField:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8921105736221152135}
+      - m_Target: {fileID: 872988166814442788}
         m_TargetAssemblyTypeName: TileController, Assembly-CSharp
         m_MethodName: NotifyCursorEnter
         m_Mode: 1
@@ -209,7 +173,7 @@ MonoBehaviour:
   <OnExit>k__BackingField:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8921105736221152135}
+      - m_Target: {fileID: 872988166814442788}
         m_TargetAssemblyTypeName: TileController, Assembly-CSharp
         m_MethodName: NotifyCursorExit
         m_Mode: 1
@@ -224,7 +188,7 @@ MonoBehaviour:
   <OnClick>k__BackingField:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8921105736221152135}
+      - m_Target: {fileID: 872988166814442788}
         m_TargetAssemblyTypeName: TileController, Assembly-CSharp
         m_MethodName: NotifyCursorClicked
         m_Mode: 1
@@ -236,7 +200,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!65 &1329216674561819491
+--- !u!65 &1410321516039417782
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -251,7 +215,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 232260911668315574}
   - component: {fileID: 8923715788619362713}
   - component: {fileID: 1369220793003019181}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8209721902333569594}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Snow Crystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}

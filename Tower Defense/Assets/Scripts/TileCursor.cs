@@ -10,6 +10,7 @@ public class TileCursor : MonoBehaviour
 
     void OnEnable()
     {
+        Debug.Log("Enabling cursor");
         ListenToTilesIn(TargetGrid);
     }
 
@@ -22,6 +23,7 @@ public class TileCursor : MonoBehaviour
     {
         foreach (TileController tile in grid.GetComponentsInChildren<TileController>())
         {
+            // Debug.Log("Adding listener to tile");
             tile.OnCursorEnter.AddListener(HandleTileEntered);
             tile.OnCursorExit.AddListener(HandleTileExited);
         }
@@ -29,6 +31,7 @@ public class TileCursor : MonoBehaviour
 
     public void HandleTileEntered(TileController tile)
     {
+        Debug.Log("Moving Tile");
         transform.position = tile.transform.position;
         Model.SetActive(true);
     }

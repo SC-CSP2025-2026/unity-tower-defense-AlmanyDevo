@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1706668391018696288}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Snow tree single
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4539004557673905321}
   - component: {fileID: 1982553112522027191}
   - component: {fileID: 1464173044569948919}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
