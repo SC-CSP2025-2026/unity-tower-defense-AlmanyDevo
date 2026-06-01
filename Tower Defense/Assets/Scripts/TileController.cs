@@ -4,7 +4,8 @@ using UnityEngine.Events;
 public class TileController : MonoBehaviour
 {
     [field: SerializeField]
-public bool IsOccupied { get; private set; } = false;
+    public bool IsOccupied { get; private set; } = false;
+
     [field: SerializeField]
     public UnityEvent<TileController> OnCursorEnter;
 
@@ -13,6 +14,11 @@ public bool IsOccupied { get; private set; } = false;
 
     [field: SerializeField]
     public UnityEvent<TileController> OnCursorClicked;
+
+    public void SetIsOccupied(bool isOccupied)
+    {
+        IsOccupied = isOccupied;
+    }
 
     public void NotifyCursorEnter()
     {
