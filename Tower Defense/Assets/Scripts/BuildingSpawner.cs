@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class TurrentSpawner : MonoBehaviour
+public class BuildingSpawner : MonoBehaviour
 {
     [field: SerializeField]
-    public GameObject TurrentPrefab { get; private set; }
+    public BuildingData Selected { get; private set; }
 
     [field: SerializeField]
     public GameObject TargetGrid { get; private set; }
@@ -11,16 +11,8 @@ public class TurrentSpawner : MonoBehaviour
     [field: SerializeField]
     public PlayerController Controller { get; private set; }
 
-    [field: SerializeField]
-    public TurrentSpawner OtherSpawner { get; private set; }
-
     void OnEnable()
     {
-        if (OtherSpawner != null)
-        {
-            OtherSpawner.enabled = false;
-        }
-
         Controller.InfoLabel.text = "Select a Tile";
         ListenToTilesIn(TargetGrid);
     }
@@ -67,7 +59,7 @@ public class TurrentSpawner : MonoBehaviour
             return false;
         }
 
-        if (Controller.Gold < 50)
+        if (Controller.Gold < Selected.Cost)
         {
             return false;
         }
@@ -82,11 +74,11 @@ public class TurrentSpawner : MonoBehaviour
             return;
         }
 
-        GameObject newTurrent = Instantiate(TurrentPrefab, Controller.transform);
+        GameObject newTurrent = Instantiate(Selected.BuildingPrefab, Controller.transform);
         newTurrent.transform.position = TileController.transform.position;
 
         TileController.SetIsOccupied(true);
-        Controller.Gold -= 50;
+        Controller.Gold -= Selected.Cost;
     }
 
     public void ShowInfo(TileController tileController)
@@ -95,13 +87,13 @@ public class TurrentSpawner : MonoBehaviour
         {
             Controller.InfoLabel.text = "Cannot build here";
         }
-        else if (Controller.Gold < 50)
+        else if (Controller.Gold < Selected.Cost)
         {
             Controller.InfoLabel.text = "<color=red>Not Enough Gold</color>";
         }
         else
         {
-            Controller.InfoLabel.text = "50 Gold - Place Turret";
+            Controller.InfoLabel.text = $"{Selected.Cost} Gold - Place {Selected.name}";
         }
     }
 
