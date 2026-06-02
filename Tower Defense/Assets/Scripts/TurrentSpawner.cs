@@ -11,8 +11,16 @@ public class TurrentSpawner : MonoBehaviour
     [field: SerializeField]
     public PlayerController Controller { get; private set; }
 
+    [field: SerializeField]
+    public TurrentSpawner OtherSpawner { get; private set; }
+
     void OnEnable()
     {
+        if (OtherSpawner != null)
+        {
+            OtherSpawner.enabled = false;
+        }
+
         Controller.InfoLabel.text = "Select a Tile";
         ListenToTilesIn(TargetGrid);
     }
@@ -74,7 +82,7 @@ public class TurrentSpawner : MonoBehaviour
             return;
         }
 
-        GameObject newTurrent = Instantiate(TurrentPrefab);
+        GameObject newTurrent = Instantiate(TurrentPrefab, Controller.transform);
         newTurrent.transform.position = TileController.transform.position;
 
         TileController.SetIsOccupied(true);
