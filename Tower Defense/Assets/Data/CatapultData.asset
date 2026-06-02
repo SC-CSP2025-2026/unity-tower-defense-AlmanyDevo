@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9206e20d98ec4856a4a16e2a11f45d6, type: 3}
   m_Name: CatapultData
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: 
-  <Cost>k__BackingField: 0
-  <BuildingPrefab>k__BackingField: {fileID: 0}
+  <Name>k__BackingField: Catapult
+  <Cost>k__BackingField: 125
+  <BuildingPrefab>k__BackingField: {fileID: 5892060908284830796, guid: 9ce99afb20ed94aa8926aa4f5ad136ee, type: 3}
